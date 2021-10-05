@@ -1,13 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+// font-family: 'Poppins', sans-serif;
+// font-family: "Montserrat", sans-serif;
 
 @font-face {
   font-family: "Revenue";
   src: url("/assets/font/revenue.ttf") format("truetype");
 }
 
+// NAVBAR
 .navbar {
   span {
     font-family: "Revenue";
+  }
+
+  .navbar-toggler {
+    .navbar-toggler-icon {
+      border: 1px solid black;
+
+      .divider,
+      .divider2,
+      .divider3 {
+        position: absolute;
+        width: 18px;
+        height: 0.5px;
+        background-color: black;
+        top: 19px;
+        left: 31px;
+      }
+
+      .divider2 {
+        top: 27px;
+      }
+
+      .divider3 {
+        top: 35px;
+      }
+    }
   }
 
   .navbar-collapse {
@@ -19,6 +49,23 @@
       font-weight: 500;
       text-decoration: none;
       color: black;
+    }
+  }
+}
+
+.dropdown-menu {
+  border: 0;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+
+  li {
+    padding: 5px;
+
+    a {
+      padding: 0.25rem 0.75rem;
+    }
+
+    i {
+      padding: 0.25rem 0rem 0.25rem 0.5rem;
     }
   }
 }
@@ -57,3 +104,30 @@
   }
 }
 /* ============ small devices .end// ============ */
+
+// CAROUSEL
+.carousel-item {
+  height: 32rem;
+  background: #000;
+  color: white;
+  position: relative;
+
+  .container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 50px;
+  }
+
+  .overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+  }
+}

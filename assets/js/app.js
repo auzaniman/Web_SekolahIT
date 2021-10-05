@@ -1,3 +1,4 @@
+// MULTIDROPDOWN
 //	window.addEventListener("resize", function() {
 //		"use strict"; window.location.reload();
 //	});
@@ -43,4 +44,14 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   // end if innerWidth
 });
-// DOMContentLoaded  end
+// MULTIDROPDOWN END
+
+// CAROUSEL
+$(document).ready(function () {
+  $(".center").slick({
+    slidesToShow: 3,
+    dots: true,
+    centerMode: true,
+  });
+});
+// CAROUSEL END
