@@ -11,6 +11,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.ni-font {
+  font-family: "Revenue";
+}
+
 .navbar span {
   font-family: "Revenue";
 }

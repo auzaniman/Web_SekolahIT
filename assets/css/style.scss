@@ -15,12 +15,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.ni-font {
+  font-family: "Revenue";
+}
+
 // NAVBAR
 .navbar {
-  span {
-    font-family: "Revenue";
-  }
-
   .navbar-toggler {
     .navbar-toggler-icon {
       border: 1px solid black;
@@ -111,7 +111,7 @@ body {
 }
 /* ============ small devices .end// ============ */
 
-// CAROUSEL
+// HERO SECTION
 .carousel-item {
   height: 32rem;
   background: #000;
@@ -124,10 +124,6 @@ body {
     left: 0;
     right: 0;
     padding-bottom: 50px;
-
-    span {
-      font-family: "Revenue";
-    }
   }
 
   .overlay-image {
