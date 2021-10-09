@@ -94,10 +94,10 @@ $(document).ready(function () {
 //Testimoni
 $(document).ready(function () {
   $(".testi").slick({
+    arrows: false,
     infinite: true,
-    speed: 500,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
     fade: true,
     cssEase: "linear",
   });
