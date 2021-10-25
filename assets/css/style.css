@@ -306,37 +306,37 @@ q {
           filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.5));
 }
 
-.wrapper {
+.wrapper-kabar-berita {
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
 }
 
-.wrapper .card {
+.wrapper-kabar-berita .card {
   border: 0;
   border-radius: 1rem;
   -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
 }
 
-.wrapper .card .card-body {
+.wrapper-kabar-berita .card .card-body {
   width: 100%;
   vertical-align: top;
   padding: 0.5rem 1rem 1rem 1rem;
 }
 
-.wrapper .card .card-body .card-content {
+.wrapper-kabar-berita .card .card-body .card-content {
   text-align: left;
   color: #333;
 }
 
-.wrapper .card img {
+.wrapper-kabar-berita .card img {
   padding: 0.7rem;
   border-radius: 1.2rem;
 }
 
-.wrapper .center {
+.wrapper-kabar-berita .center {
   width: 90%;
   margin: 0px auto;
 }
@@ -349,12 +349,12 @@ q {
   width: 100%;
 }
 
-.wrapper .slick-dots li button:before {
+.wrapper-kabar-berita .slick-dots li button:before {
   font-size: 14px;
   color: black;
 }
 
-.wrapper .slick-prev:before,
+.wrapper-kabar-berita .slick-prev:before,
 .slick-next:before {
   color: black;
 }
@@ -446,7 +446,8 @@ button:hover {
 .carousel,
 .jumbotron,
 .unit-pendaftaran,
-.alur-pendaftaran {
+.alur-pendaftaran,
+.form-pendaftaran {
   /*button:before (attr data-hover)*/
   /*button div (button text before hover)*/
 }
@@ -454,7 +455,8 @@ button:hover {
 .carousel button,
 .jumbotron button,
 .unit-pendaftaran button,
-.alur-pendaftaran button {
+.alur-pendaftaran button,
+.form-pendaftaran button {
   background: var(--blue-grad);
   outline: none;
   position: relative;
@@ -466,7 +468,8 @@ button:hover {
 .carousel button:hover:before,
 .jumbotron button:hover:before,
 .unit-pendaftaran button:hover:before,
-.alur-pendaftaran button:hover:before {
+.alur-pendaftaran button:hover:before,
+.form-pendaftaran button:hover:before {
   opacity: 1;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
@@ -475,7 +478,8 @@ button:hover {
 .carousel button:before,
 .jumbotron button:before,
 .unit-pendaftaran button:before,
-.alur-pendaftaran button:before {
+.alur-pendaftaran button:before,
+.form-pendaftaran button:before {
   content: attr(data-hover);
   color: #fff;
   position: absolute;
@@ -496,7 +500,8 @@ button:hover {
 .carousel button:hover div,
 .jumbotron button:hover div,
 .unit-pendaftaran button:hover div,
-.alur-pendaftaran button:hover div {
+.alur-pendaftaran button:hover div,
+.form-pendaftaran button:hover div {
   opacity: 0;
   -webkit-transform: translate(100%, 0);
           transform: translate(100%, 0);
@@ -505,7 +510,8 @@ button:hover {
 .carousel button div,
 .jumbotron button div,
 .unit-pendaftaran button div,
-.alur-pendaftaran button div {
+.alur-pendaftaran button div,
+.form-pendaftaran button div {
   text-transform: uppercase;
   letter-spacing: 3px;
   color: white;
@@ -682,17 +688,21 @@ button:hover {
 }
 
 /*Section heading style-2*/
-.content-area-l5-2 {
+.wrapper-timeline {
+  /* Timeline */
+}
+
+.wrapper-timeline .content-area-l5-2 {
   background: rgba(29, 36, 58, 0.02);
   padding-top: 60px;
   padding-bottom: 55px;
 }
 
-.content-l5-2-content {
+.wrapper-timeline .content-l5-2-content {
   padding-top: 45px;
 }
 
-.content-l5-2-content p {
+.wrapper-timeline .content-l5-2-content p {
   font-size: 17px;
   line-height: 30px;
   display: -webkit-box;
@@ -705,7 +715,7 @@ button:hover {
   margin-bottom: 30px;
 }
 
-.section__heading-2 h2 {
+.wrapper-timeline .section__heading-2 h2 {
   line-height: 1.2;
   margin-bottom: 1em;
   color: var(--greydark);
@@ -716,71 +726,70 @@ button:hover {
 }
 
 @media (min-width: 480px) {
-  .section__heading-2 h2 {
+  .wrapper-timeline .section__heading-2 h2 {
     font-size: 38px !important;
     line-height: 45px;
   }
 }
 
 @media (min-width: 768px) {
-  .section__heading-2 h2 {
+  .wrapper-timeline .section__heading-2 h2 {
     font-size: 48px;
     line-height: 55px;
   }
-  .content-area-l5-2 {
+  .wrapper-timeline .content-area-l5-2 {
     padding-top: 80px;
     padding-bottom: 75px;
   }
-  .content-l5-2-content p {
+  .wrapper-timeline .content-l5-2-content p {
     margin-bottom: 40px;
   }
 }
 
 @media (min-width: 992px) {
-  .section__heading-2 h2 {
+  .wrapper-timeline .section__heading-2 h2 {
     font-size: 60px !important;
     line-height: 66px;
   }
 }
 
 @media (min-width: 992px) {
-  .content-area-l5-2 {
+  .wrapper-timeline .content-area-l5-2 {
     padding-top: 130px;
     padding-bottom: 130px;
   }
-  .content-l5-2-content {
+  .wrapper-timeline .content-l5-2-content {
     padding-top: 0;
   }
-  .content-l5-2-content p {
+  .wrapper-timeline .content-l5-2-content p {
     margin-bottom: 48px;
   }
-  .content-l5-2-image .shape-1 {
+  .wrapper-timeline .content-l5-2-image .shape-1 {
     bottom: -15%;
     right: 22%;
   }
 }
 
-.content-l5-2-image {
+.wrapper-timeline .content-l5-2-image {
   position: relative;
 }
 
-.content-l5-2-image .shape-1 {
+.wrapper-timeline .content-l5-2-image .shape-1 {
   position: absolute;
   bottom: 10%;
   left: -15%;
 }
 
 @media screen and (max-width: 426px) {
-  .content-l5-2-content {
+  .wrapper-timeline .content-l5-2-content {
     text-align: center;
   }
-  .content-area-l5-2 .container > div > div:last-child {
+  .wrapper-timeline .content-area-l5-2 .container > div > div:last-child {
     padding: 0px 1em 1em 6em;
   }
 }
 
-/* Timeline */
-.timeline {
+.wrapper-timeline .timeline {
   border-left: 4px solid #329cff;
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
@@ -791,32 +800,32 @@ button:hover {
   text-align: left;
 }
 
-.timeline h2,
-.timeline h3 {
+.wrapper-timeline .timeline h2,
+.wrapper-timeline .timeline h3 {
   font-size: 1.4em;
 }
 
-.timeline .event {
+.wrapper-timeline .timeline .event {
   border-bottom: 1px dashed rgba(136, 136, 136, 0.5);
   padding-bottom: 25px;
   margin-bottom: 50px;
   position: relative;
 }
 
-.timeline .event:last-of-type {
+.wrapper-timeline .timeline .event:last-of-type {
   padding-bottom: 0;
   margin-bottom: 0;
   border: none;
 }
 
-.timeline .event:before,
-.timeline .event:after {
+.wrapper-timeline .timeline .event:before,
+.wrapper-timeline .timeline .event:after {
   position: absolute;
   display: block;
   top: 0;
 }
 
-.timeline .event:before {
+.wrapper-timeline .timeline .event:before {
   left: -217.5px;
   color: var(--greydark);
   content: attr(data-date);
@@ -826,7 +835,7 @@ button:hover {
   min-width: 120px;
 }
 
-.timeline .event:after {
+.wrapper-timeline .timeline .event:after {
   -webkit-box-shadow: 0 0 0 4px #329cff;
           box-shadow: 0 0 0 4px #329cff;
   left: -57.85px;
@@ -836,5 +845,83 @@ button:hover {
   width: 11px;
   content: "";
   top: 5px;
+}
+
+.form-pendaftaran .card {
+  width: 400px;
+  background-color: #fff;
+  border: none;
+  border-radius: 12px;
+}
+
+.form-pendaftaran label.radio {
+  cursor: pointer;
+  width: 100%;
+}
+
+.form-pendaftaran label.radio input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.form-pendaftaran label.radio span {
+  padding: 7px 14px;
+  border: 2px solid #eee;
+  display: inline-block;
+  color: #039be5;
+  border-radius: 10px;
+  width: 100%;
+  height: 48px;
+  line-height: 27px;
+}
+
+.form-pendaftaran label.radio input:checked + span {
+  border-color: #039be5;
+  background-color: #81d4fa;
+  color: #fff;
+  border-radius: 9px;
+  height: 48px;
+  line-height: 27px;
+}
+
+.form-pendaftaran .form-control {
+  margin-top: 10px;
+  height: 48px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+}
+
+.form-pendaftaran .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 2px solid #039be5;
+}
+
+.form-pendaftaran .agree-text {
+  font-size: 12px;
+}
+
+.form-pendaftaran .terms {
+  font-size: 12px;
+  text-decoration: none;
+  color: #039be5;
+}
+
+.form-pendaftaran .confirm-button {
+  height: 50px;
+  border-radius: 10px;
+}
+
+.form-pendaftaran button {
+  padding: 4px 30px;
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+.form-pendaftaran button::before {
+  top: 0.4em;
 }
 /*# sourceMappingURL=style.css.map */

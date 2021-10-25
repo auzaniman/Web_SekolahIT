@@ -128,3 +128,14 @@ $(document).ready(function () {
     cssEase: "linear",
   });
 });
+
+// ALUR PENDAFTARAN
+$(document).ready(function () {
+  $(".alur-pendaftaran").slick({
+    arrows: true,
+    infinite: true,
+    autoplaySpeed: 5000,
+    fade: true,
+    cssEase: "linear",
+  });
+});
